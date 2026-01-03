@@ -65,9 +65,6 @@ const ContactList = () => {
                 <td className="py-2 px-2 sm:px-4">{contact.phone}</td>
                 <td className="py-2 px-2 sm:px-4">{contact.message}</td>
                 <td className="py-2 px-2 sm:px-4">
-                  <button className="text-blue-600 hover:underline cursor-pointer text-lg">
-                    <MdEdit />
-                  </button>
                   <button
                     onClick={() => onDelete(contact._id)}
                     className="text-red-600 hover:underline ml-4 cursor-pointer text-lg "
