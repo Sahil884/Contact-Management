@@ -58,7 +58,7 @@ const ContactList = () => {
           </thead>
           <tbody id="contactsTable" className="divide-y divide-gray-200">
             {/* Example row */}
-            {contacts.map((contact) => (
+            {contacts?.map((contact) => (
               <tr key={contact._id} className="text-sm">
                 <td className="py-2 px-2 sm:px-4">{contact.name}</td>
                 <td className="py-2 px-2 sm:px-4">{contact.email}</td>
@@ -77,20 +77,7 @@ const ContactList = () => {
                 </td>
               </tr>
             ))}
-            <tr className="text-sm">
-              <td className="py-2 px-2 sm:px-4">Alice Johnson</td>
-              <td className="py-2 px-2 sm:px-4">alice@example.com</td>
-              <td className="py-2 px-2 sm:px-4">+91 9876543210</td>
-              <td className="py-2 px-2 sm:px-4">Interested in collaboration</td>
-              <td className="py-2 px-2 sm:px-4">
-                <button className="text-blue-600 hover:underline cursor-pointer text-lg">
-                  <MdEdit />
-                </button>
-                <button className="text-red-600 hover:underline ml-4 cursor-pointer text-lg ">
-                  <MdDelete />
-                </button>
-              </td>
-            </tr>
+            
           </tbody>
         </table>
       </div>
